@@ -37,8 +37,12 @@
   };
   countdown(); setInterval(countdown, 1000);
 
+  const invitationContent = document.querySelectorAll("main > :not(.cover)");
+  invitationContent.forEach(section => { section.inert = true; });
+
   $("openInvitation").addEventListener("click", () => {
     document.body.classList.add("opened");
+    invitationContent.forEach(section => { section.inert = false; });
     $("couple").scrollIntoView({ behavior: "smooth" });
     const music = $("bgMusic");
     if (music && music.querySelector("source")?.getAttribute("src")) music.play().then(() => $("musicButton").classList.add("playing")).catch(() => {});
@@ -64,9 +68,10 @@
   document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
   const form = $("rsvpForm"), status = $("formStatus"), wishes = $("wishesList");
+  const rsvpLoading = $("rsvpLoading"), submitButton = form.querySelector('button[type="submit"]');
   const renderWishes = (items) => {
     wishes.innerHTML = "";
-    if (!items || !items.length) { wishes.innerHTML = '<p class="empty-wishes">Belum ada ucapan. Jadilah yang pertama mengirim doa!</p>'; return; }
+    if (!items || !items.length) return;
     items.slice().reverse().forEach(item => {
       if (!item.message) return;
       const card = document.createElement("article"); card.className = "wish-card";
@@ -86,9 +91,11 @@
 
   form.addEventListener("submit", async e => {
     e.preventDefault();
-    if (!c.appsScriptUrl) { status.textContent = "RSVP belum dihubungkan. Lengkapi setup Google Sheets pada README."; return; }
+    if (!c.appsScriptUrl) { status.textContent = "Konfirmasi belum dapat dikirim saat ini."; return; }
     const data = Object.fromEntries(new FormData(form).entries());
     status.textContent = "Mengirim konfirmasi...";
+    submitButton.disabled = true;
+    rsvpLoading.showModal();
     try {
       const response = await fetch(c.appsScriptUrl, { method: "POST", body: JSON.stringify({ ...data, createdAt: new Date().toISOString() }) });
       const result = await response.json();
@@ -97,6 +104,9 @@
       form.reset(); await loadWishes();
     } catch {
       status.textContent = "Belum berhasil mengirim. Periksa koneksi atau konfigurasi Apps Script.";
+    } finally {
+      rsvpLoading.close();
+      submitButton.disabled = false;
     }
   });
 
