@@ -8,8 +8,11 @@
   <title>Fabi & Oca — Wedding Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="rsvp-loading.css">
+  <link rel="stylesheet" href="invitation-gate.css">
+  <link rel="stylesheet" href="design-polish.css">
 </head>
 <body>
   <div class="loading-screen" id="loadingScreen"><span class="loading-mark">F <i>&</i> O</span><span>THE WEDDING OF</span></div>
@@ -41,13 +44,13 @@
       <p class="verse">— Ar-Rum: 21</p>
       <div class="couple-grid">
         <article class="person">
-          <div class="portrait portrait-groom"><img src="assets/groom.jpg" alt="Foto mempelai pria" onerror="this.style.display='none'"><span>F</span></div>
+          <div class="portrait portrait-groom"><img src="assets/groom.jpg" alt="Foto mempelai pria" onerror="this.style.display='none'"></div>
           <p class="person-role">THE GROOM</p><h3 id="groomName">Fabiamus Silitan Simbarja</h3>
           <p class="parent-line">Putera pertama<br><span id="groomParents">Bapak Petrus Sugiri Susila Simbarja</span></p>
         </article>
         <div class="ampersand">&</div>
         <article class="person">
-          <div class="portrait portrait-bride"><img src="assets/bride.jpg" alt="Foto mempelai wanita" onerror="this.style.display='none'"><span>O</span></div>
+          <div class="portrait portrait-bride"><img src="assets/bride.jpg" alt="Foto mempelai wanita" onerror="this.style.display='none'"></div>
           <p class="person-role">THE BRIDE</p><h3 id="brideName">Odelia Ocarina Oktoberlian</h3>
           <p class="parent-line">Puteri pertama<br><span id="brideParents">Bapak Pilippus Benetius Dwi Harsono</span></p>
         </article>
@@ -80,7 +83,7 @@
             <p class="event-time" id="ceremonyTime">10.00 WIB</p>
             <h4 id="ceremonyVenue">Gereja St. Antonius Padua, Purbayan Surakarta</h4>
             <p id="ceremonyAddress">Jl. Arifin No.1, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57111</p>
-            <a class="text-link" id="ceremonyMaps" href="#" target="_blank" rel="noopener">Lihat Lokasi di Google Maps ↗</a>
+            <a class="text-link location-link" id="ceremonyMaps" href="#" target="_blank" rel="noopener"><svg class="location-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>Lihat Lokasi</span><span class="location-service">Google Maps ↗</span></a>
           </div>
           <div class="thin-line"></div>
           <div class="event-item">
@@ -89,7 +92,7 @@
             <p class="event-time" id="receptionTime">19.00 WIB</p>
             <h4 id="receptionVenue">Graha Perhutani, Surakarta</h4>
             <p id="receptionAddress">Jl. Slamet Riyadi No.473, Pajang, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57146</p>
-            <a class="text-link" id="receptionMaps" href="#" target="_blank" rel="noopener">Lihat Lokasi di Google Maps ↗</a>
+            <a class="text-link location-link" id="receptionMaps" href="#" target="_blank" rel="noopener"><svg class="location-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>Lihat Lokasi</span><span class="location-service">Google Maps ↗</span></a>
           </div>
         </div>
       </div>
@@ -104,14 +107,13 @@
       <p class="eyebrow">CAPTURED MOMENTS</p><h2>Wedding <i>Gallery</i></h2>
       <p class="section-subtitle">Potongan cerita yang ingin kami kenang selamanya.</p>
       <div class="gallery-grid">
-        <img src="assets/gallery-1.jpg" alt="Wedding gallery 1" onerror="this.src='assets/photo-placeholder.svg'">
-        <img src="assets/gallery-2.jpg" alt="Wedding gallery 2" onerror="this.src='assets/photo-placeholder.svg'">
-        <img src="assets/gallery-3.jpg" alt="Wedding gallery 3" onerror="this.src='assets/photo-placeholder.svg'">
-        <img src="assets/gallery-4.jpg" alt="Wedding gallery 4" onerror="this.src='assets/photo-placeholder.svg'">
-        <img src="assets/gallery-5.jpg" alt="Wedding gallery 5" onerror="this.src='assets/photo-placeholder.svg'">
-        <img src="assets/gallery-6.jpg" alt="Wedding gallery 6" onerror="this.src='assets/photo-placeholder.svg'">
+        <img src="assets/gallery-1.jpg" alt="Wedding gallery 1" onerror="this.style.display='none'">
+        <img src="assets/gallery-2.jpg" alt="Wedding gallery 2" onerror="this.style.display='none'">
+        <img src="assets/gallery-3.jpg" alt="Wedding gallery 3" onerror="this.style.display='none'">
+        <img src="assets/gallery-4.jpg" alt="Wedding gallery 4" onerror="this.style.display='none'">
+        <img src="assets/gallery-5.jpg" alt="Wedding gallery 5" onerror="this.style.display='none'">
+        <img src="assets/gallery-6.jpg" alt="Wedding gallery 6" onerror="this.style.display='none'">
       </div>
-      <p class="gallery-note">Foto galeri final akan dipilih oleh Fabi.</p>
     </section>
 
     <section class="gift-section section-pad reveal" id="gift">
@@ -140,7 +142,7 @@
         <button class="button button-dark" type="submit">Kirim Konfirmasi <span>↗</span></button>
         <p class="form-status" id="formStatus" aria-live="polite"></p>
       </form>
-      <div class="wishes"><p class="eyebrow">FROM THE HEART</p><h3>Wedding Wishes</h3><div id="wishesList" class="wishes-list"><p class="empty-wishes">Ucapan dari keluarga dan sahabat akan tampil di sini.</p></div></div>
+      <div class="wishes"><p class="eyebrow">FROM THE HEART</p><h3>Wedding Wishes</h3><div id="wishesList" class="wishes-list"></div></div>
     </section>
 
     <footer class="closing">
@@ -148,6 +150,14 @@
     </footer>
   </main>
 
+  <dialog class="rsvp-loading" id="rsvpLoading" aria-labelledby="rsvpLoadingTitle" aria-describedby="rsvpLoadingDescription">
+    <div class="rsvp-loading-content">
+      <div class="rsvp-loading-orbit" aria-hidden="true"><span>F <i>&amp;</i> O</span></div>
+      <p class="eyebrow light">MENGIRIM RSVP</p>
+      <h2 id="rsvpLoadingTitle">Mohon tunggu sebentar</h2>
+      <p id="rsvpLoadingDescription">Konfirmasi Anda sedang dikirim.</p>
+    </div>
+  </dialog>
   <button class="music-button" id="musicButton" aria-label="Putar musik">♫</button>
   <audio id="bgMusic" loop preload="none"><source src="assets/music.mp3" type="audio/mpeg"></audio>
   <script src="config.js"></script>
