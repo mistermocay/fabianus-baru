@@ -35,5 +35,5 @@ window.WEDDING_CONFIG = {
   giftAddress: "",
 
   // Tempel URL Web App Google Apps Script setelah deployment.
-  appsScriptUrl: ""
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbx6p7wu6_IRnEZ03ccKicsuT1aIAzWO-ckfGdu9VNHBTMjT9Lb-cmJ3zYgXwUjm518rqg/exec"
 };
