@@ -1,0 +1,23 @@
+body:not(.opened) {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body:not(.opened) .cover {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+}
+
+body:not(.opened) .music-button {
+  visibility: hidden;
+}
+
+body.opened .cover {
+  position: relative;
+  inset: auto;
+  z-index: auto;
+}
