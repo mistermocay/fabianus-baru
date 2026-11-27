@@ -1,0 +1,85 @@
+body {
+  font-weight: 400;
+}
+
+.rsvp input,
+.rsvp select,
+.rsvp textarea {
+  font-weight: 400;
+}
+
+.loading-mark,
+.cover h1,
+.guest-name,
+.intro h2,
+.intro-copy,
+.person h3,
+.ampersand,
+.countdown strong,
+.light-heading,
+.event h2,
+.event-details h3,
+.event-details h4,
+.story-copy h2,
+.gallery h2,
+.gift-card h3,
+.wishes h3,
+.wish-card strong,
+.rsvp h2,
+.closing h2,
+.rsvp-loading-orbit span,
+.rsvp-loading-content h2 {
+  font-weight: 500;
+}
+
+.text-link.location-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: 1px solid #bba681;
+  border-radius: 999px;
+  background: #f5f1e8;
+  color: #385047;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background .2s, color .2s, border-color .2s;
+}
+
+.text-link.location-link:hover {
+  border-color: #193b32;
+  background: #193b32;
+  color: #f3ecdf;
+}
+
+.location-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.location-service {
+  padding-left: 9px;
+  border-left: 1px solid currentColor;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+@media (max-width: 420px) {
+  .text-link.location-link {
+    gap: 7px;
+    padding: 9px 11px;
+  }
+
+  .location-service {
+    padding-left: 7px;
+  }
+}
