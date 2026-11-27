@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17372f">
+  <meta name="description" content="Undangan pernikahan Fabi & Oca — 30 Desember 2026, Surakarta.">
+  <title>Fabi & Oca — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loading-screen" id="loadingScreen"><span class="loading-mark">F <i>&</i> O</span><span>THE WEDDING OF</span></div>
+
+  <main>
+    <section class="cover" id="home">
+      <div class="cover-image"></div>
+      <div class="cover-shade"></div>
+      <div class="cover-content">
+        <p class="eyebrow light">THE WEDDING OF</p>
+        <h1><span id="coverGroom">Fabi</span><em>&</em><span id="coverBride">Oca</span></h1>
+        <p class="cover-date">Surakarta . 30.12.2026</p>
+        <div class="invite-to">Kepada Bapak/Ibu/Saudara/i</div>
+        <div class="guest-name" id="guestName">Tamu Undangan</div>
+        <button class="button button-light" id="openInvitation">Buka Undangan <span>↗</span></button>
+        <p class="cover-note">Dengan penuh rasa syukur, kami mengundang Anda<br>untuk menjadi bagian dari hari bahagia kami.</p>
+      </div>
+      <div class="cover-bottom">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <nav class="floating-nav" aria-label="Navigasi">
+      <a href="#couple">Couple</a><a href="#event">Event</a><a href="#gallery">Gallery</a><a href="#rsvp">RSVP</a>
+    </nav>
+
+    <section class="intro section-pad reveal" id="couple">
+      <p class="eyebrow">A CELEBRATION OF LOVE</p>
+      <h2>Two souls, <i>one story.</i></h2>
+      <p class="intro-copy">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram di sampingnya.”</p>
+      <p class="verse">— Ar-Rum: 21</p>
+      <div class="couple-grid">
+        <article class="person">
+          <div class="portrait portrait-groom"><img src="assets/groom.jpg" alt="Foto mempelai pria" onerror="this.style.display='none'"><span>F</span></div>
+          <p class="person-role">THE GROOM</p><h3 id="groomName">Fabiamus Silitan Simbarja</h3>
+          <p class="parent-line">Putera pertama<br><span id="groomParents">Bapak Petrus Sugiri Susila Simbarja</span></p>
+        </article>
+        <div class="ampersand">&</div>
+        <article class="person">
+          <div class="portrait portrait-bride"><img src="assets/bride.jpg" alt="Foto mempelai wanita" onerror="this.style.display='none'"><span>O</span></div>
+          <p class="person-role">THE BRIDE</p><h3 id="brideName">Odelia Ocarina Oktoberlian</h3>
+          <p class="parent-line">Puteri pertama<br><span id="brideParents">Bapak Pilippus Benetius Dwi Harsono</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section section-pad reveal">
+      <p class="eyebrow light">SAVE THE DATE</p><h2 class="light-heading">Counting the days</h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">000</strong><span>DAYS</span></div><b>:</b>
+        <div><strong id="hours">00</strong><span>HOURS</span></div><b>:</b>
+        <div><strong id="minutes">00</strong><span>MINUTES</span></div><b>:</b>
+        <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+      </div>
+      <div class="calendar-links">
+        <a class="date-link" id="calendarLink" href="#" target="_blank" rel="noopener">Simpan Holy Matrimony ke Google Calendar ↗</a>
+        <a class="date-link" id="receptionCalendarLink" href="#" target="_blank" rel="noopener">Simpan Resepsi ke Google Calendar ↗</a>
+      </div>
+    </section>
+
+    <section class="event section-pad reveal" id="event">
+      <p class="eyebrow">JOIN OUR CELEBRATION</p><h2>The Wedding <i>Day</i></h2>
+      <div class="event-card">
+        <div class="event-photo"><img src="assets/event.jpg" alt="Foto suasana pernikahan" onerror="this.style.display='none'"></div>
+        <div class="event-details">
+          <p class="eyebrow">RABU · 30 DESEMBER 2026</p>
+          <div class="event-item">
+            <p class="event-number">01</p>
+            <h3>Holy Matrimony</h3>
+            <p class="event-time" id="ceremonyTime">10.00 WIB</p>
+            <h4 id="ceremonyVenue">Gereja St. Antonius Padua, Purbayan Surakarta</h4>
+            <p id="ceremonyAddress">Jl. Arifin No.1, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57111</p>
+            <a class="text-link" id="ceremonyMaps" href="#" target="_blank" rel="noopener">Lihat Lokasi di Google Maps ↗</a>
+          </div>
+          <div class="thin-line"></div>
+          <div class="event-item">
+            <p class="event-number">02</p>
+            <h3>Resepsi</h3>
+            <p class="event-time" id="receptionTime">19.00 WIB</p>
+            <h4 id="receptionVenue">Graha Perhutani, Surakarta</h4>
+            <p id="receptionAddress">Jl. Slamet Riyadi No.473, Pajang, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57146</p>
+            <a class="text-link" id="receptionMaps" href="#" target="_blank" rel="noopener">Lihat Lokasi di Google Maps ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section reveal">
+      <div class="story-photo"><img src="assets/story.jpg" alt="Foto prewedding" onerror="this.style.display='none'"></div>
+      <div class="story-copy"><p class="eyebrow light">A LITTLE STORY</p><h2 class="light-heading">Berawal dari sebuah cerita.</h2><p>Setiap perjalanan memiliki kisahnya sendiri. Dengan doa dan restu keluarga, kami melangkah menuju babak baru untuk membangun cerita bersama.</p></div>
+    </section>
+
+    <section class="gallery section-pad reveal" id="gallery">
+      <p class="eyebrow">CAPTURED MOMENTS</p><h2>Wedding <i>Gallery</i></h2>
+      <p class="section-subtitle">Potongan cerita yang ingin kami kenang selamanya.</p>
+      <div class="gallery-grid">
+        <img src="assets/gallery-1.jpg" alt="Wedding gallery 1" onerror="this.src='assets/photo-placeholder.svg'">
+        <img src="assets/gallery-2.jpg" alt="Wedding gallery 2" onerror="this.src='assets/photo-placeholder.svg'">
+        <img src="assets/gallery-3.jpg" alt="Wedding gallery 3" onerror="this.src='assets/photo-placeholder.svg'">
+        <img src="assets/gallery-4.jpg" alt="Wedding gallery 4" onerror="this.src='assets/photo-placeholder.svg'">
+        <img src="assets/gallery-5.jpg" alt="Wedding gallery 5" onerror="this.src='assets/photo-placeholder.svg'">
+        <img src="assets/gallery-6.jpg" alt="Wedding gallery 6" onerror="this.src='assets/photo-placeholder.svg'">
+      </div>
+      <p class="gallery-note">Foto galeri final akan dipilih oleh Fabi.</p>
+    </section>
+
+    <section class="gift-section section-pad reveal" id="gift">
+      <p class="eyebrow light">A TOKEN OF LOVE</p><h2 class="light-heading">Wanna give us<br><i>some gifts?</i></h2>
+      <p class="gift-copy">Doa dan kehadiran Anda merupakan hadiah terindah bagi kami. Namun, apabila ingin mengirimkan tanda kasih, dapat melalui informasi berikut.</p>
+      <div class="gift-cards">
+        <div class="gift-card">
+          <p class="eyebrow">BANK TRANSFER</p><h3>BCA</h3><strong>8175324280</strong><span>a.n. Ocarina Oktoberlian</span>
+          <button class="copy-button" data-copy="8175324280">Salin Nomor Rekening</button>
+        </div>
+        <div class="gift-card">
+          <p class="eyebrow">BANK TRANSFER</p><h3>BRI</h3><strong>302201040689530</strong><span>a.n. Fabianus Siltian Simbarja</span>
+          <button class="copy-button" data-copy="302201040689530">Salin Nomor Rekening</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp section-pad reveal" id="rsvp">
+      <p class="eyebrow">KINDLY RESPOND</p><h2>RSVP & <i>Wishes</i></h2>
+      <p class="section-subtitle">Merupakan suatu kehormatan bagi kami apabila Anda berkenan hadir.</p>
+      <form id="rsvpForm">
+        <label>Nama lengkap<input name="name" type="text" placeholder="Nama Anda" required maxlength="100"></label>
+        <label>Konfirmasi kehadiran<select name="attendance" required><option value="">Pilih konfirmasi</option><option value="Hadir">Hadir</option><option value="Tidak Hadir">Tidak Hadir</option></select></label>
+        <label>Jumlah tamu yang hadir<select name="guests" id="guestCount"><option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option><option value="4">4 orang</option></select></label>
+        <label>Ucapan & doa<textarea name="message" rows="4" placeholder="Tuliskan ucapan dan doa terbaik..." maxlength="500"></textarea></label>
+        <button class="button button-dark" type="submit">Kirim Konfirmasi <span>↗</span></button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+      <div class="wishes"><p class="eyebrow">FROM THE HEART</p><h3>Wedding Wishes</h3><div id="wishesList" class="wishes-list"><p class="empty-wishes">Ucapan dari keluarga dan sahabat akan tampil di sini.</p></div></div>
+    </section>
+
+    <footer class="closing">
+      <p class="eyebrow light">WITH LOVE</p><h2>Fabi <i>&</i> Oca</h2><p>30 . 12 . 2026 · SURAKARTA</p><div class="footer-rule"></div><small>Terima kasih atas doa dan kehadiran Anda.</small>
+    </footer>
+  </main>
+
+  <button class="music-button" id="musicButton" aria-label="Putar musik">♫</button>
+  <audio id="bgMusic" loop preload="none"><source src="assets/music.mp3" type="audio/mpeg"></audio>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
